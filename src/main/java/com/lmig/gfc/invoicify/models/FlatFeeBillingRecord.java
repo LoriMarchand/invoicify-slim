@@ -5,18 +5,18 @@ import javax.persistence.Entity;
 // This needs to be an entity
 @Entity
 public class FlatFeeBillingRecord extends BillingRecord {
+	
+	private double amount;
 
 	@Override
 	public double getTotal() {
-		return 0;
+		return  amount;
 	}
 
 	// This does NOT need an id because it inherits it from the BillingRecord class
 	// This needs a double field named amount
 	
-	private double amount;
-
-	public double getAmount() {
+		public double getAmount() {
 		return amount;
 	}
 

@@ -8,7 +8,7 @@ public class RateBasedBillingRecord extends BillingRecord {
 
 	@Override
 	public double getTotal() {
-		return 0;
+		return rate * quantity;
 	}
 
 	// This does NOT need an id because it inherits it from the BillingRecord class

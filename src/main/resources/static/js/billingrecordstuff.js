@@ -1,6 +1,6 @@
 $(function() {
 
-    $('#create-flat-fee-record').submit(function(e) {
+    $('#create-flat-fee-form').submit(function(e) {
         e.preventDefault();
 
         let flatFee = {
@@ -28,8 +28,8 @@ $(function() {
                         <td>${ data.description }</td>
                         <td>${ data.client.name }</td>
                         <td>${ data.amount }</td>
-                        <td>${ data.rate }</td>
-                        <td>${ data.quantity }</td>
+                        <td></td>
+                        <td></td>
                         <td>${ data.total }</td>
                 	</tr>
                 		`);
@@ -68,10 +68,10 @@ $(function() {
                         <td>${ data.createdBy.username }</td>
                         <td>${ data.description }</td>
                         <td>${ data.client.name }</td>
-                        <td>${ data.amount }</td>
-                        <td>${ data.rate }</td>
+                        <td></td>
+                        <td>$${ data.rate }</td>
                         <td>${ data.quantity }</td>
-                        <td>${ data.total }</td>
+                        <td>$${ data.total }</td>
                     </tr>
                 `);
             
